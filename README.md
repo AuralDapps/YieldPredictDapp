@@ -238,7 +238,7 @@ Copyright (c) 2025 Prediction Market DApp
 - Stress test completado
 - Security analysis realizado
 
-✅ **$0 Cost Stack**
+✅ **$ Stack**
 - Alchemy Free: 30M CU/mes
 - Tenderly Free: 50 txs/día
 - Multi-RPC fallback
