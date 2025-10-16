@@ -10,8 +10,6 @@ Plataforma descentralizada de mercados de predicción con yield aggregation y pr
 
 - **Network:** Tenderly Virtual TestNet (BSC Chain ID 56)
 - **Contratos Deployados:** 7/7 ✅
-- **Tests:** 37/40 passing (92.5%)
-- **Stress Test:** 39/67 txs exitosas (58.2%)
 - **Security:** 0 HIGH issues
 - **Costo:** $0/mes
 
@@ -25,21 +23,6 @@ Plataforma descentralizada de mercados de predicción con yield aggregation y pr
 2. **Setup rápido (5 min):** [QUICK_START.md](./QUICK_START.md)
 3. **Ver toda la documentación:** [DOCUMENTACION_INDEX.md](./DOCUMENTACION_INDEX.md)
 
-### Instalación
-
-```bash
-# Instalar dependencias
-npm install
-
-# Compilar contratos
-npx hardhat compile
-
-# Ejecutar tests
-npm test
-
-# Deploy a Tenderly Virtual TestNet
-npx hardhat run scripts/deploy.js --network tenderlyVirtual
-```
 
 ---
 
@@ -100,71 +83,6 @@ npx hardhat run scripts/deploy.js --network tenderlyVirtual
 
 ---
 
-## 🌐 CONTRATOS DEPLOYADOS
-
-### Tenderly Virtual TestNet (BSC)
-
-| Contrato | Address |
-|----------|---------|
-| MockUSDT | `0x55dBF25f2B865722C681160d504Cd7e995F5dA6E` |
-| Treasury | `0x8e99D7B4b480de0B27dA47d5c46194D3C29Cb8f1` |
-| MockVenus | `0x63da096B53c46f3E9C31a10Af7a4d8810290Ab88` |
-| MockPancake | `0xF10cc6654516E022936BBc1684AfbF3d56d6c22E` |
-| YieldAggregator | `0x03b9c668696205fb66a35d6759699967C580Ea5c` |
-| Factory | `0x488C1003423d54697d325dF4b43F4cCf96161704` |
-| Test Market | `0xA613c8af26660f6Cb335e8AcD0d292997Da20886` |
-
-**Deployer:** `0xFd28a6f91C22F98EBa83C9E8492FbE15618d0817`
-
-**Dashboard:** https://dashboard.tenderly.co/Oangarit/project
-
----
-
-## 🧪 TESTING
-
-### Ejecutar Tests
-
-```bash
-# Tests completos
-npm test
-
-# Test coverage
-npx hardhat coverage
-
-# Stress test
-npx hardhat run scripts/stress-test.js --network tenderlyVirtual
-
-# Security analysis
-node scripts/basic-security-check.js
-```
-
-### Resultados
-
-```
-Tests:        37/40 passing (92.5%)
-├─ Treasury:      16/16 (100%)
-└─ PredictionMarket: 21/24 (87.5%)
-
-Stress Test:  39/67 exitosas (58.2%)
-├─ Setup:         11/11 (100%)
-├─ Bets:          23/50 (46%)
-└─ Limits Test:    5/6 (83%)
-
-Security:     0 HIGH, 3 MEDIUM, 6 LOW
-```
-
----
-
-## 💰 STACK ULTRA-ECONÓMICO
-
-```
-Alchemy Free Tier:     $0/mes (30M CU)
-Tenderly Free Tier:    $0/mes (50 txs/día)
-Public RPCs:           $0/mes
-Hosting (estimado):    ~$10/mes
-
-TOTAL:                 ~$10/mes
-```
 
 ### Multi-RPC Fallback
 
@@ -173,30 +91,9 @@ TOTAL:                 ~$10/mes
 - ✅ Failover automático
 - ✅ Health monitoring
 
----
 
 ## 🔧 DESARROLLO
 
-### Hardhat Console
-
-```bash
-# Conectar a Tenderly Virtual TestNet
-npx hardhat console --network tenderlyVirtual
-
-# Obtener contratos
-const Factory = await ethers.getContractAt(
-  "PredictionMarketFactory",
-  "0x488C1003423d54697d325dF4b43F4cCf96161704"
-);
-
-# Crear mercado
-const tx = await Factory.createMarket(
-  "¿Bitcoin alcanzará $100k?",
-  "Sí",
-  "No",
-  Math.floor(Date.now() / 1000) + 86400
-);
-```
 
 Para más comandos, ver [COMANDOS_UTILES.md](./COMANDOS_UTILES.md)
 
@@ -226,12 +123,6 @@ Para más comandos, ver [COMANDOS_UTILES.md](./COMANDOS_UTILES.md)
 ## 🎯 PRÓXIMOS PASOS
 
 ### Corto Plazo
-- [ ] Frontend development
-- [ ] Fix 3 failing tests
-- [ ] Implement SafeERC20
-- [ ] 100% test coverage
-
-### Mediano Plazo
 - [ ] Deploy a BSC Testnet público
 - [ ] User testing
 - [ ] Gas optimizations
@@ -247,7 +138,6 @@ Para más comandos, ver [COMANDOS_UTILES.md](./COMANDOS_UTILES.md)
 
 ## 🔗 LINKS IMPORTANTES
 
-- **Tenderly Dashboard:** https://dashboard.tenderly.co/Oangarit/project
 - **Documentación Completa:** [DOCUMENTACION_INDEX.md](./DOCUMENTACION_INDEX.md)
 - **Hardhat Docs:** https://hardhat.org/docs
 - **OpenZeppelin:** https://docs.openzeppelin.com/
@@ -337,30 +227,6 @@ Copyright (c) 2025 Prediction Market DApp
 3. **GitHub Issues:** Para reportar bugs
 4. **Tenderly:** Para debugging de transacciones
 
----
-
-## ✨ FEATURES
-
-### Mercados de Predicción
-- ✅ Crear mercados con 2 outcomes
-- ✅ Dynamic odds calculation
-- ✅ Pool-based betting
-- ✅ Automatic commission & house edge
-- ✅ Manual market resolution
-- ✅ Winner claims
-
-### Yield Aggregation
-- ✅ Auto-compounding
-- ✅ Venus Protocol integration
-- ✅ PancakeSwap integration
-- ✅ Optimized gas usage
-
-### Protecciones
-- ✅ Circuit breakers
-- ✅ Betting limits
-- ✅ Odds protection
-- ✅ Liquidity requirements
-- ✅ Emergency pause
 
 ---
 
