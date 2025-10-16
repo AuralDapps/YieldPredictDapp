@@ -11,7 +11,6 @@ Plataforma descentralizada de mercados de predicción con yield aggregation y pr
 - **Network:** Tenderly Virtual TestNet (BSC Chain ID 56)
 - **Contratos Deployados:** 7/7 ✅
 - **Security:** 0 HIGH issues
-- **Costo:** $0/mes
 
 ---
 
@@ -37,7 +36,7 @@ Plataforma descentralizada de mercados de predicción con yield aggregation y pr
 | [🚀 QUICK_START.md](./QUICK_START.md) | Guía de inicio rápido (5 minutos) |
 | [🛠️ COMANDOS_UTILES.md](./COMANDOS_UTILES.md) | Comandos útiles para desarrollo |
 | [✅ DEPLOY_EXITOSO.md](./DEPLOY_EXITOSO.md) | Resultados del deployment |
-| [💰 SETUP_ULTRA_ECONOMICO.md](./SETUP_ULTRA_ECONOMICO.md) | Setup de infraestructura |
+| [💰 SETUP_ULTRA.md](./SETUP.md) | Setup de infraestructura |
 | [🧪 TENDERLY_VIRTUAL_TESTNET.md](./TENDERLY_VIRTUAL_TESTNET.md) | Guía de testing |
 
 ---
