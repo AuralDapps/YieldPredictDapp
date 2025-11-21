@@ -225,124 +225,8 @@ Whitepaper: yieldpred.space/whitepaper
 
 📁 ESTRUCTURA DEL PROYECTO
 
-prediction-market/
-├── contracts/              # Smart contracts (Solidity 0.8.20)
-│   ├── PredictionMarket.sol          # Core market logic (V4)
-│   ├── PredictionMarketFactory.sol   # Factory pattern
-│   ├── YieldAggregator.sol           # Yield generation
-│   ├── Treasury.sol                  # Fee management
-│   ├── interfaces/                   # Contract interfaces
-│   └── mocks/                        # Mock contracts for testing
-├── test/                  # Test suites (39 tests, 90%+ coverage)
-│   ├── unit/             # Unit tests
-│   ├── integration/      # Integration tests
-│   └── stress/           # Stress tests
-├── scripts/               # Deployment & utility scripts
-│   ├── deploy.js         # Main deployment
-│   ├── verify.js         # Contract verification
-│   └── utils/            # Helper scripts
-├── client/                # Frontend (React + Vite)
-│   ├── src/
-│   │   ├── components/   # React components
-│   │   ├── utils/        # RPC utilities, web3 helpers
-│   │   └── hooks/        # Custom React hooks
-│   └── public/           # Static assets
-├── docs/                  # Documentación completa
-│   ├── WHITEPAPER.md     # Whitepaper v2.0
-│   ├── INVESTOR_REPORT.pdf # 12-page investor report
-│   ├── TECHNICAL.md      # Technical documentation
-│   └── API.md            # API reference
-├── .github/
-│   └── workflows/        # CI/CD pipelines (8 jobs)
-├── hardhat.config.js     # Hardhat configuration
-├── package.json          # Dependencies
-└── .env                  # Configuration (NO COMMITEAR)
+<img width="212" height="292" alt="image" src="https://github.com/user-attachments/assets/d18ceea8-bd1c-495f-8ae1-1602ae88853c" />
 
-🔐 SEGURIDAD
-Implementado ✅
-
-Smart Contract Security:
-
-✅ ReentrancyGuard en todas las funciones críticas
-✅ SafeERC20 para todos los token transfers
-✅ Role-based access control (AccessControl)
-✅ Pausable emergency stop mechanism
-✅ Input validation y bounds checking
-✅ Circuit breakers y límites dinámicos
-✅ Emergency reserve buffer ($1,000 USDT)
-
-Testing & QA:
-
-✅ 90%+ test coverage (39/39 passing)
-✅ Unit tests, integration tests, edge cases
-✅ Stress testing completado
-✅ Gas optimization analysis
-✅ Slither security analysis (0 HIGH issues)
-✅ CI/CD automated testing (8 jobs)
-
-Infrastructure:
-
-✅ Multi-RPC fallback (6 BSC testnet, 5 mainnet)
-✅ Health monitoring
-✅ Automatic failover
-✅ Rate limit handling
-Pendiente ⚠️ (Investment Priorities)
-
-Critical (Blockers for Mainnet):
-
-⚠️ Professional third-party audit (CertiK/OpenZeppelin)
-Cost: 30k−80k (included in $400k raise)
-Timeline: 4-6 weeks
-Status: Not yet initiated (pending funding)
-Priority: #1 use of investment funds
-
-High Priority:
-
-⚠️ Decentralized oracle integration (Chainlink/UMA)
-Current: Manual resolution (RESOLVER_ROLE)
-Target: Automated, decentralized resolution
-Cost: 20k−30k development
-Timeline: Q2 2025
-
-Medium Priority:
-
-⚠️ Bug bounty program (post-audit): 10k−50k pool
-⚠️ Multi-sig for admin functions
-⚠️ Timelock for critical operations
-Reportar Vulnerabilidades
-
-🚨 Responsible Disclosure:
-
-Si encuentras una vulnerabilidad de seguridad:
-
-❌ NO la publiques públicamente
-✅ Contacta: security@yieldpred.space
-✅ Incluye: Descripción, pasos para reproducir, impacto
-✅ Espera confirmación antes de disclosure público
-
-Recompensas (Bug Bounty - Post-Audit): Shares 
-
-
-Solidity:
-
-OpenZeppelin standards
-NatSpec documentation
-Gas optimization conscious
-Security-first approach
-
-JavaScript/TypeScript:
-
-ES6+ con async/await
-ESLint configuration
-Prettier formatting
-Comprehensive error handling
-
-Tests:
-
-90%+ coverage objetivo (95%+ ideal)
-Unit tests para todas las funciones
-Integration tests para flujos completos
-Edge cases y error scenarios
 
 🎉 LOGROS & MILESTONES
 
@@ -374,10 +258,6 @@ Roadmap Defined (2025-2027)
 Go-to-Market Strategy (social media, partnerships)
 Unit Economics Validated (LTV/CAC 5x, 75% margin)
 
-
-Traditional prediction markets lock billions in idle capital generating zero returns.
-
-Polymarket alone has $100M+ locked with 0% yield.
 
 Our Solution
 
